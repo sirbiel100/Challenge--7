@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Outfit:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  height: 100vh;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  margin-top: 5rem;
+}
+main img {
+  height: 50px;
+  width: 50px;
+}
+
+.nav-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-class #close-menu {
+  display: none;
+}
+.nav-class .mobile-icon-menu {
+  display: none;
+}
+.nav-class .mobile-icon-close {
+  display: none;
+}
+.nav-class ul {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-class ul a {
+  color: hsl(236, 13%, 42%);
+  border-radius: 15px;
+  padding: 0.3rem;
+  border: 0.2px solid black;
+}
+.nav-class ul a:hover {
+  transition: all 0.5s;
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+}
+
+.main-container {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+.item1 {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1/span 2;
+}
+
+.item3 {
+  grid-column: 1/span 3;
+  grid-row: 3;
+}
+
+.nav-class {
+  width: 100%;
+}
+
+.main-container {
+  background-color: hsl(36, 100%, 99%);
+  margin-top: 1.5rem;
+  overflow: hidden;
+  padding-top: 1rem;
+  width: 1000px;
+}
+
+.item2 {
+  margin-left: 1.3rem;
+}
+
+.item3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.5rem;
+}
+
+.nav-class img {
+  height: auto;
+  width: auto;
+}
+
+.item1 img {
+  height: 60%;
+  width: 40rem;
+}
+
+.item3 img {
+  width: 90px;
+  height: auto;
+}
+
+.mobile-image {
+  display: none;
+}
+
+.container1-text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.8rem;
+}
+.container1-text h1 {
+  color: hsl(240, 100%, 5%);
+  font-weight: 800;
+}
+.container1-text p {
+  color: hsl(236, 13%, 42%);
+}
+.container1-text button {
+  margin-top: 1.3rem;
+  border: none;
+  height: 40px;
+  width: 180px;
+  color: hsl(36, 100%, 99%);
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  background-color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+.container1-text button:hover {
+  transition: all 0.3s ease;
+  background-color: hsl(240, 100%, 5%);
+}
+
+.item2 {
+  background-color: hsl(240, 100%, 5%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  padding-bottom: 1.2rem;
+}
+.item2 h2 {
+  color: hsl(35, 77%, 62%);
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.item2 h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.item2 h3:hover {
+  transition: all 0.3s ease-in;
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+.item2 p {
+  color: hsl(233, 8%, 79%);
+}
+.item2 .container2-second {
+  border-top: 0.1px solid hsl(236, 13%, 42%);
+  padding-top: 1.5rem;
+}
+.item2 .container2-third {
+  border-top: 0.1px solid hsl(236, 13%, 42%);
+  padding-top: 1.5rem;
+}
+
+.item3 h4 {
+  font-weight: 800;
+  margin-top: 0.5rem;
+  color: hsl(240, 100%, 5%);
+}
+.item3 h4:hover {
+  transition: all 0.3s ease-in;
+  color: hsl(5, 85%, 63%);
+  cursor: pointer;
+}
+.item3 p {
+  margin-top: 0.5rem;
+  color: hsl(236, 13%, 42%);
+}
+
+span {
+  font-size: 25px;
+  color: hsl(233, 8%, 79%);
+  font-weight: 700;
+}
+
+.container3-first {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.container3-second {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.container3-third {
+  display: flex;
+  gap: 1rem;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+  .nav-class {
+    justify-content: flex-start;
+    padding: 0;
+    margin-bottom: 4rem;
+  }
+  #open-menu button {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 15rem;
+  }
+  #open-menu .mobile-icon-menu {
+    display: block;
+  }
+  #open-menu .mobile-icon-close {
+    display: block;
+    z-index: 1;
+  }
+  .nav-list {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50vw;
+    background-color: hsl(36, 100%, 99%);
+    box-shadow: -225px 0 0px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+  }
+  .nav-list ul {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    flex-direction: column;
+  }
+  .nav-list ul li {
+    margin: 0.5rem 0;
+  }
+  .nav-list ul a {
+    color: hsl(240, 100%, 5%);
+    border: none;
+  }
+  .nav-list ul a:hover {
+    background-color: white;
+    color: hsl(240, 100%, 5%);
+  }
+  .nav-list #close-menu {
+    display: block;
+    z-index: 1;
+  }
+  .nav-list #close-menu .mobile-icon-close {
+    position: absolute;
+    right: 4.4rem;
+    top: 3.4rem;
+    cursor: pointer;
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .item1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .item1 .container1-text {
+    flex-direction: column;
+  }
+  .item1 .container1-text .container1-paragraph {
+    margin-top: 1rem;
+  }
+  .item1 .mobile-image {
+    display: block;
+    height: 350px;
+    width: 350px;
+  }
+  .item1 .desktop-image {
+    display: none;
+  }
+  .item2 {
+    margin: 0;
+    width: 350px;
+    margin-top: 3.5rem;
+  }
+  .item3 {
+    margin: 0;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  footer {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
