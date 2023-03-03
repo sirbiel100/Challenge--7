@@ -227,6 +227,9 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  html {
+    overflow: hidden;
+  }
   body {
     position: relative;
     left: 2rem;
