@@ -228,6 +228,9 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    width: 80vw;
+  }
   main {
     padding: 3rem;
     display: flex;
@@ -262,7 +265,7 @@ footer {
     bottom: 0;
     width: 50vw;
     background-color: hsl(36, 100%, 99%);
-    box-shadow: -225px 0 0px rgba(0, 0, 0, 0.5);
+    box-shadow: -255px 0 0px rgba(0, 0, 0, 0.5);
     padding: 2rem;
   }
   .nav-list ul {
