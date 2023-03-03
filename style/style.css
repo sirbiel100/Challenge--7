@@ -227,13 +227,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  html {
-    overflow: hidden;
-  }
-  body {
-    position: relative;
-    left: 2rem;
-  }
   main {
     padding: 3rem;
     display: flex;
@@ -303,7 +296,7 @@ footer {
   .main-container {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    width: 100%;
   }
   .item1 {
     display: flex;
@@ -338,10 +331,5 @@ footer {
   }
   footer {
     display: none;
-  }
-}
-@media screen and (min-width: 600px) and (max-width: 1000px) {
-  body {
-    overflow: hidden;
   }
 }/*# sourceMappingURL=style.css.map */
