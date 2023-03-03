@@ -20,6 +20,7 @@ body {
     place-items: center;
     margin: auto;
     height: 100vh;
+    flex-wrap: wrap;
 }
 
 main {
@@ -55,11 +56,9 @@ main {
             color: $DarkGrayishBlue;
             border-radius: 15px;
             padding: .3rem;
-            border: .2px solid black;
             &:hover{
                 transition: all 0.5s;
-                background-color: $VeryDarkBlue;
-                color: white;
+                color: $SoftRed;
             } 
            
         }
@@ -244,17 +243,18 @@ footer {
     margin-top: 2rem;
 }
 
+
 @media screen and (max-width:600px) {
 
     body {
-        width: 80vw;
+        position: relative;
+        left: 2rem;
     }
-    
+
     main {
         padding: 3rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin: 0;
     }
     
@@ -370,3 +370,10 @@ footer {
     footer { display: none;}
 }
 
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+    body {
+        overflow: hidden;
+    }
+
+}
